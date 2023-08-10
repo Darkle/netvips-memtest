@@ -50,4 +50,25 @@ let main _ =
     )
     |> ignore
 
+    // Async.Parallel(
+    //     arr
+    //     |> Array.mapi (fun index _ ->
+    //         async {
+    //             convertImageToWebp ()
+    //             convertToThumbnail ()
+    //             convertToAvif ()
+    //             printfn $"Done {index + 1} of {arr.Length}"
+    //         }),
+    //     maxDegreeOfParallelism = 4
+    // )
+    // |> Async.Ignore
+    // |> Async.RunSynchronously
+
+    // for item in arr do
+    //     convertImageToWebp ()
+    //     convertToThumbnail ()
+    //     convertToAvif ()
+    //     let itemNum = arr |> Array.findIndex (fun thing -> thing = item)
+    //     printfn $"Done {itemNum + 1} of {arr.Length}"
+
     0
